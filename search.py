@@ -13,7 +13,7 @@ def main():
     ).strip().lower()
 
     if escolha == 'data':
-        data = input("Digite a data (AAAA-MM-DD): ").strip()
+        data = input("Digite a data (dd-mm-yyyy): ").strip()
         resultados = diario.buscar_por_data(data)
         if resultados:
             print(f"Entradas para {data}:")
